@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Results Summary Component</title>
+
+    <!-- Link CSS Stylesheet -->
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- Google Fonts: Hanken Grotesk -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend+Deca:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link Favicon -->
+    <link rel="icon" href="./assets/images/favicon-32x32.png" />
+  </head>
+  <body>
+    <main class="results-summary">
+      <div class="results-summary__final-results-container">
+        <h1 class="results-summary__final-results-title">Your Result</h1>
+        <div class="results-summary__final-results">
+          <p class="results-summary__final-results-score">76</p>
+          <p class="results-summary__final-results-score-full">of 100</p>
+        </div>
+        <h2 class="results-summary__grade">Great</h2>
+        <p class="results-summary__grade-description">
+          You scored higher than 65% of the people who have taken this tests.
+        </p>
+      </div>
+      <div class="results-summary__results-breakdown-container">
+        <h1 class="results-summary__results-breakdown-title">Summary</h1>
+        <div class="results-summary__results-table">
+          <div id="breakdown-reaction" class="results-breakdown">
+            <div class="results-breakdown__icon-and-label">
+              <img
+                src="./assets/images/icon-reaction.svg"
+                alt="Reaction icon"
+                class="results-breakdown__icon"
+              />
+              <h3 class="results-breakdown__label">Reaction</h3>
+            </div>
+            <div class="results-breakdown__score-and-score-full">
+              <p class="results-breakdown__score">80</p>
+              <p class="results-breakdown__score-full">/ 100</p>
+            </div>
+          </div>
+          <div id="breakdown-memory" class="results-breakdown">
+            <div class="results-breakdown__icon-and-label">
+              <img
+                src="./assets/images/icon-memory.svg"
+                alt="Memory icon"
+                class="results-breakdown__icon"
+              />
+              <h3 class="results-breakdown__label">Memory</h3>
+            </div>
+            <div class="results-breakdown__score-and-score-full">
+              <p class="results-breakdown__score">92</p>
+              <p class="results-breakdown__score-full">/ 100</p>
+            </div>
+          </div>
+          <div id="breakdown-verbal" class="results-breakdown">
+            <div class="results-breakdown__icon-and-label">
+              <img
+                src="./assets/images/icon-verbal.svg"
+                alt="Verbal icon"
+                class="results-breakdown__icon"
+              />
+              <h3 class="results-breakdown__label">Verbal</h3>
+            </div>
+            <div class="results-breakdown__score-and-score-full">
+              <p class="results-breakdown__score">61</p>
+              <p class="results-breakdown__score-full">/ 100</p>
+            </div>
+          </div>
+          <div id="breakdown-visual" class="results-breakdown">
+            <div class="results-breakdown__icon-and-label">
+              <img
+                src="./assets/images/icon-visual.svg"
+                alt="Visual icon"
+                class="results-breakdown__icon"
+              />
+              <h3 class="results-breakdown__label">Visual</h3>
+            </div>
+            <div class="results-breakdown__score-and-score-full">
+              <p class="results-breakdown__score">73</p>
+              <p class="results-breakdown__score-full">/ 100</p>
+            </div>
+          </div>
+        </div>
+        <button class="results-summary__button">Continue</button>
+      </div>
+    </main>
+  </body>
+</html>
